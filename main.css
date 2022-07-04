@@ -504,7 +504,7 @@ margin-top: 3rem;
 }
 /* SECTION2 */
 .input__bar{
-    background-image: url("/images/bg-shorten-desktop.svg");
+    background-image: url("./images/bg-shorten-desktop.svg");
     max-width: 1186px;
     background-position: top right;
     flex-direction: row;
