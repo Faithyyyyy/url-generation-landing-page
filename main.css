@@ -106,15 +106,12 @@ header{
     flex-direction: column;
     gap: 4rem;
 }
-
-.img__container{
-    width: 100%;
-    overflow: hidden;
-}
 .hero__img{
     position: relative;
-    right: -8%;
-    width: 100%;
+    right: -20%;
+}
+.img__container{
+    overflow: hidden;
 }
 .hero__content h1,
 .hero__content p{
