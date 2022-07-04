@@ -1,0 +1,613 @@
+/* Importing fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" );
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul {
+    list-style: none;
+  }
+  
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  font-size: 1.5rem;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+  background-size: cover;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+select {
+  font: inherit;
+}
+
+a {
+  text-decoration: none;
+}
+html{
+    font-size: 62.5%;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Custom properties */
+
+
+:root{
+/* Colors */
+--Cyan: hsl(180, 66%, 49%);
+--DarkViolet: hsl(257, 27%, 26%);
+--Red: hsl(0, 87%, 67%);
+--Gray: hsl(0, 0%, 75%);
+--GrayishViolet: hsl(257, 7%, 63%);
+--VeryDarkBlue: hsl(255, 11%, 22%);
+---VeryDarkViolet: hsl(260, 8%, 14%);
+}
+
+/* General properties */
+
+.main__container{
+    margin: 0 2rem;
+}
+.flex{
+    display: flex;
+}
+
+/* header */
+header{
+    padding-top: 3rem;
+}
+.mobile__nav{
+ display: none;
+}
+.hamburger{
+    position: absolute;
+    right: 2rem;
+    top: 3rem;
+    color: var(--GrayishViolet);
+}
+
+/* Hero Section*/
+.hero__section{
+    flex-direction: column;
+    gap: 4rem;
+}
+.hero__img{
+    position: relative;
+    right: -20%;
+}
+.img__container{
+    overflow: hidden;
+}
+.hero__content h1,
+.hero__content p{
+    text-align: center;
+}
+.hero__content h1{
+    font-size: 2.7rem;
+    line-height: 1.3;
+    margin-bottom: 1rem;
+}
+.hero__content{
+    width: 30rem;
+    margin: 0 auto;
+    flex-direction: column;
+    place-items: center;
+}
+.hero__content p{
+   font-weight: 500;
+   color:var(--GrayishViolet);
+}
+main{
+    margin-top: 2rem;
+    margin-bottom: 14rem;
+}
+
+/* Buttons */
+.cyan__BG_btn{
+    background: var(--Cyan);
+    padding: .9rem 2.5rem;
+    color: white;
+    border-radius: 20px;
+    font-weight: 500;
+    display: inline-block;
+} 
+.btn__links{
+display: inline-block;
+margin-top: 3rem;
+}
+.cyan__BG_btn:hover,
+    .input__bar button:hover{
+        opacity: .5;
+    }
+/* SECOND SECTION */
+ .section__two{
+    background: var(--Gray);
+    padding: 3rem 0;
+    padding-bottom: 9rem;
+
+ }
+ .input__bar{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    background-color: var(--DarkViolet);
+    background-image: url("./images/bg-shorten-mobile.svg");
+    background-repeat: no-repeat;
+    background-position: top right;
+    border-radius: 8px;
+    padding: 3rem;
+
+ }
+ /* **********felt like testing if i could merge the suggestion link section with the shorten it section and it worked */
+ .testing{
+    position: relative;
+   top: -140px;
+ }
+ .testing > *{
+    margin-top: 3rem;
+ }
+ /* **********felt like testing if i could merge the suggestion link section with the shorten it section and it worked */
+ .input__bar input,
+ .input__bar button{
+    height: 4rem;
+    outline: none;
+    border-radius: 5px;
+    border: 0;
+ }
+ .input__bar input{
+    padding-left: 1.5rem;
+ }
+ .input__bar input:focus{
+    border: 1px solid var(--Cyan);
+ }
+ .input__bar button{
+    background: var(--Cyan);
+    color: white;
+    font-size: 1.4rem;
+    font-weight: 700;
+ }
+ /* *********INPUT JAVASCRIPT********* */
+ .suggested__links{
+    background: white;
+    border-radius: 7px;
+    display: flex;
+    flex-direction: column;
+ }
+ .inputed__links{
+    padding: 2rem ;
+    padding-top: 1.5rem;
+    color: var(---VeryDarkViolet);
+    font-weight: 500;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--Gray);
+ }
+ .shortened__link{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+   padding: 2rem;
+ }
+ .generated__link{
+    color: var(--Cyan);
+    cursor: pointer;
+ }
+ .copy__link_btn{
+    background-color: var(--Cyan);
+    border: 0px;
+    border-radius: 5px;
+   height: 4rem;
+   color: white;
+   font-weight: 500;
+   font-size: 1.4rem;
+ }
+ .suggestions >*{
+    margin-top: 2rem;
+ }
+ .section__two h2, .section__two p, .article h3{
+    text-align: center;
+ }
+ .section__two h2{
+    color: var(--veryDarkViolet);
+    margin-top: 3rem;
+ }
+ .article{
+    background: white;
+    border-radius: 7px;
+    padding: 2rem ;
+    padding-top: 4rem;
+    position: relative;
+    max-width: 35rem;
+    margin: 0 auto;
+ }
+ h3{
+    margin: 2rem 0;
+ }
+ .ss__content{
+    font-weight: 700;
+    color: var(--GrayishViolet);
+    margin-top: 1.5rem;
+    margin-bottom: 4rem;
+    max-width: 50rem;
+    line-height: 2;
+    margin: 0 auto;
+    margin-bottom: 6rem;
+ }
+ .article__heading{
+    background: var(--DarkViolet);
+    border-radius: 50%;
+    height: 6rem;
+    width: 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 41%;
+    top: -13%;
+ }
+ .second__section_articles{
+  display: flex;
+  flex-direction: column;
+
+ }
+ .ss__img{
+    width: 3rem;
+    height: 3rem;
+ }
+ .article__para{
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 1.6;
+    color: gray;
+ }
+.line{
+    height: 8rem;
+    width: 7px;
+    background-color: var(--Cyan);
+    justify-self: center;
+    align-self: center;
+}
+/* THIRD SECTION */
+.third__section{
+    background: var(--DarkViolet);
+    background-image: url("./images/bg-boost-mobile.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 10rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+.third__section h4{
+    color: white;
+    font-size: 3rem;
+}
+.third__section_btn{
+        background: var(--Cyan);
+        padding: .9rem 2.5rem;
+        color: white;
+        border-radius: 20px;
+        font-weight: 500;
+        display: inline-block;
+        align-self: center;
+    }
+    footer{
+        background: var(--VeryDarkBlue);
+        padding: 10rem 0;
+    }
+    footer a{
+       color: var(--GrayishViolet);
+       font-size: 1.2rem;
+       text-align: center;
+    }
+    footer h5{
+        text-align: center;
+        color:white;
+        margin: 0;
+        margin-bottom: 1rem;
+    }
+    .features,
+    .resources,
+    .Company{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .footer__links > * {
+        margin-top: 2.5rem;
+    }
+    .sm__links{
+        display: flex;
+        gap: 2rem;
+        justify-content: center;
+    }
+    .sm__img:hover{
+        background-color:  var(--Cyan);
+    }
+    .footer__second_layout{
+        display: flex;
+        flex-direction: column;
+        gap :2rem;
+    }
+    .footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* *************INPUT JAVASCRIPT TO COME ON AND OFFF************ */
+    /* ************display this with JS when a person tries to shorten a link */
+ .suggestions{
+    /* display: none; */
+ }
+ /* ************display this with JS when a person tries to shorten a link */
+ /* *********INPUT JAVASCRIPT********* */
+    .hidden__for_desktop{
+        display: none;
+        background-color: var(--DarkViolet);
+        /* width: 40rem; */
+        border-radius: 7px;
+        padding-top: 2rem;
+        position: relative;
+    }
+    .fa-solid{
+        position: absolute;
+        right: 2.5rem;
+        top: .7rem;
+        color: white;
+    }
+    .hidden__for_desktop > *{
+        padding-top: 1rem;
+    }
+    .hidden__mobile_nav{
+        display: block;
+        padding-bottom: 1rem;
+        border-bottom: 1px solid var(--Gray);
+        padding-left: 2rem;
+        color: white;
+    }
+    /* *************INPUT JAVASCRIPT TO COME ON AND OFFF************ */
+/* Media Queries */
+@media screen and (min-width:650px){
+    .main__container{
+        margin: 0 3rem;
+    }
+    .hidden__for_desktop{
+        display: none;
+    }
+    .hero__content{
+        width: 45rem;
+    }
+    .hamburger{
+        display: none;
+    }
+    .display__for_tab{
+        /* display: block; */
+        display: flex;
+        gap: 1.5rem;
+        align-items: center;
+    }
+    .login__btn{
+        color: var(--GrayishViolet);
+        display: inline-block;
+        font-weight: 700;
+    }
+    header{
+        justify-content: space-between;
+        align-items: center;
+    }
+    .nav__links{
+        color: var(--GrayishViolet);
+        font-weight: 700;
+    }
+    .hero__content h1{
+        font-size: 3rem;
+        line-height: 1.3;
+        margin-bottom: 1rem;
+    }
+    .hero__content p{
+        font-size: 1.5rem;
+        line-height: 1.6;
+    }
+    h2{
+        font-size: 4rem;
+    }
+    .input__bar{
+        margin: 0 auto;
+    }
+    .testing{
+        top: -100px;
+    }
+}
+@media screen and (min-width:900px){
+    .logo{
+        height: 4rem;
+    }
+    .main__container{
+        margin: 0 7rem;
+    }
+    .display__for_desktop{
+        display: flex;
+        gap: 1.5rem;
+    }
+    .first__header{
+        display: flex;
+        align-items: center;
+    }
+    .nav__links:hover{
+        color: var(--VeryDarkBlue);
+    }
+    .cyan__BG_btn:hover,
+    .input__bar button:hover{
+        opacity: .5;
+    }
+    .hero__section{
+        flex-direction: row;
+        margin-top: 5rem;
+        margin-left: 7rem;
+        align-items: center;
+    }
+    .img__container{
+        order: 2;
+    }
+    .hero__content h1,
+.hero__content p{
+    text-align: left;
+}
+.hero__content h1{
+    font-size: 4rem;
+    line-height: 1.3;
+    margin-bottom: 1rem;
+}
+.hero__content p{
+    font-size: 1.5rem;
+    line-height: 1.6;
+}
+.hero__CTA{
+    align-self: flex-start;
+}
+/* SECTION2 */
+.input__bar{
+    background-image: url("/images/bg-shorten-desktop.svg");
+    max-width: 1186px;
+    background-position: top right;
+    flex-direction: row;
+    top: -80px;
+    
+}
+.input__bar input{
+    width: 70%;
+}
+.input__bar button{
+    width: 30%;
+}
+.third__section{
+    background-image: url('/images/bg-boost-desktop.svg');
+}
+.footer__links{
+    display: flex;
+    gap: 10rem;
+}
+.footer__links > * {
+    margin-top: 0rem;
+}
+footer a , footer h5{
+    text-align: left;
+}
+.footer{
+    gap: 7rem;
+}
+ .footer__second_layout{
+    gap: 5rem;
+}
+.testing{
+    top: -80px;
+}
+.shortened__link{
+    flex-direction: row;
+    align-items: center;
+    padding: 1.2rem 0;
+}
+.inputed__links{
+    border-bottom: 0px;
+}
+.suggested__links{
+    flex-direction: row;
+    padding-right: 2rem;
+    justify-content: space-between;
+    align-items: center;
+}
+.copy__link_btn{
+    width: 9rem;
+}
+}
+@media screen and (min-width:1050px){
+    .footer{
+        flex-direction: row;
+        gap: 0;
+        justify-content: space-between;
+        align-items: flex-start;
+    
+    }
+    .footer__second_layout{
+        flex-direction: row;
+        gap: 15rem;
+    }
+}
+@media screen and (min-width:1300px){
+    .hero__content{
+        margin-left: 0;
+    }
+.hero__content h1,
+.hero__content p{
+    text-align: left;
+}
+.hero__content h1{
+    font-size: 6rem;
+    line-height: 1.3;
+    margin-bottom: 1rem;
+}
+.hero__content p{
+    font-size: 1.8rem;
+    line-height: 1.6;
+}
+.second__section_articles{
+    flex-direction: row;
+    align-items: flex-start;
+}
+.line{
+    width: 12rem;
+    height: 6px;
+}
+.first__article{
+    height: 23rem;
+
+}
+.second__article{
+    margin-top: 5rem;
+    height: 23rem;
+}
+.third__article{
+    margin-top: 10rem;
+    height: 23rem;
+    padding-bottom: 0;
+}
+}
+
+

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./images/favicon-32x32.png"
+      type="image/x-icon"
+    />
+    <script src="https://kit.fontawesome.com/d3bd58d5f3.js" crossorigin="anonymous"></script>
+    <title>URL Shortening website</title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <section class="first__section">
+      <header class="main__container flex">
+        <div class="first__header">
+          <img src="./images/logo.svg" alt="" class="logo" />
+          <nav>
+            <ul class="mobile__nav display__for_desktop">
+              <li><a href="#" class="nav__links">Features</a></li>
+              <li><a href="#" class="nav__links">Pricing</a></li>
+              <li><a href="#" class="nav__links">Resources</a></li>
+            </ul>
+          </nav>
+        </div>
+        <img
+          src="./images/icon-hamburger.svg"
+          alt="options"
+          class="hamburger"
+        />
+        <div>
+          <ul class="mobile__nav display__for_tab">
+            <li><a href="#" class="nav__links">Login</a></li>
+            <li><a href="#" class="cyan__BG_btn">Sign Up</a></li>
+          </ul>
+        </div>
+      </header>
+      <div class="hidden__for_desktop">
+        <i class="fa-solid fa-xmark"></i>
+        <a href="#" class="hidden__mobile_nav">Features</a>
+          <a href="#" class="hidden__mobile_nav">Resources</a>
+          <a href="#" class="hidden__mobile_nav">Pricing</a>
+          <a href="#" class="hidden__mobile_nav">Contact Us</a>
+      </div>
+      <!-- Hero section -->
+      <main>
+        <div class ="hero__section flex">
+          <div class="img__container">
+            <img
+              src="./images/illustration-working.svg"
+              alt=""
+              class="hero__img"
+            />
+          </div>
+          <div class="hero__content  flex">
+            <h1>More than just shorter links</h1>
+            <p>
+              Build your brand’s recognition and get detailed insights on how
+              your links are performing.
+            </p>
+            <div class="hero__CTA">
+              <a href="#" class="cyan__BG_btn btn__links"> Get Started</a>
+            </div>
+          </div>
+        </div>
+      </main>
+    </section>
+
+    <!-- SECTION TWO -->
+    <section class="section__two">
+      <div class="main__container">
+        <div class="testing">
+          <article class="input__bar">
+            <input type="text" placeholder="Shorten a link here..." />
+            <button class="btn">Shorten here!</button>
+          </article>
+          <!-- -----------INPUT JAVASCRIPT--------- -->
+          <div class="suggestions">
+          <div class="suggested__links">
+              <a href="#" class="inputed__links">
+                https://frontendmentor.io
+              </a>
+              <div class="shortened__link">
+                <a href="#" class="generated__link">https://rel.link/k6yuk4</a>
+                <button class="copy__link_btn">Copy</button>
+              </div>
+          </div>
+          <div class="suggested__links">
+            <a href="#" class="inputed__links">
+              https://frontendmentor.io
+            </a>
+            <div class="shortened__link">
+              <a href="#" class="generated__link">https://rel.link/k6yuk4</a>
+              <button class="copy__link_btn">Copy</button>
+            </div>
+                </div>
+          
+                <div class="suggested__links">
+          <a href="#" class="inputed__links">
+            https://frontendmentor.io
+          </a>
+          <div class="shortened__link">
+            <a href="#" class="generated__link">https://rel.link/k6yuk4</a>
+            <button class="copy__link_btn">Copy</button>
+          </div>
+        </div>
+        </div>
+        <!-- -----------INPUT JAVASCRIPT--------- -->
+        <h2>Advanced Statistics</h2>
+        <p class="ss__content">Track how your links are performing across the web with our advanced statistics dashboard.</p>
+        <div class="second__section_articles">
+            <article class="article first__article">
+                <div class="article__heading">
+                    <img src="/images/icon-brand-recognition.svg" alt="" class="ss__img">
+                </div>
+                <h3>Brand Recognition</h3>
+                <p class="article__para">Boost your brand recognition with each click. Generic links don’t mean a thing. Branded links help instil confidence in your content. </p>
+            </article>
+            <div class="line"></div>
+            <article class="article second__article">
+                <div class="article__heading">
+                    <img src="/images/icon-detailed-records.svg" alt="" class="ss__img">
+                </div>
+                <h3>Detailed Records</h3>
+                <p class="article__para">Gain insights into who is clicking your links. Knowing when and where people engage with your content helps inform better decisions.</p>
+            </article>
+            <div class="line"></div>
+
+            <article class="article third__article">
+                <div class="article__heading">
+                    <img src="/images/icon-fully-customizable.svg" alt="" class="ss__img">
+                </div>
+                <h3>Fully Customizable</h3>
+                <p class="article__para"> Improve brand awareness and content discoverability through customizable links, supercharging audience engagement. </p>
+            </article>
+        </div>
+        </div>
+    </section>
+
+    <!-- SECTION THREE -->
+    <section class="third__section">
+      <h4>
+        Boost your links today 
+      </h4>
+      <a href="#" class="third__section_btn"> Get Started</a>
+    </section>
+
+    <!-- FOOTER -->
+<footer>
+  <div class="main__container footer">
+    <!-- first__footer -->
+    <div class="first__footer">
+      <img src="./images/logo - Copy.svg" alt="" class="logo" />
+    </div>
+    <!-- second__footer(footer links) -->
+    <div class="footer__second_layout">
+      <div class="footer__links">
+        <!-- features links -->
+        <div class="features">
+          <h5>Features</h5>
+          <a href="#">Link Shortening</a>
+          <a href="#">Branded Links</a>
+          <a href="#">Analytics</a>
+        </div>
+        <!-- Resources  links -->
+        <div class="resources">
+          <h5>Resources</h5>
+          <a href="#">Blog</a>
+          <a href="#">Developers </a>
+          <a href="#">Support</a>
+        </div>
+        <!-- Company  links -->
+        <div class="Company">
+          <h5>Company</h5>
+          <a href="#">About</a>
+          <a href="#">Our team</a>
+          <a href="#">Careers </a>
+          <a href="#">Contact</a>
+        </div>
+      </div>
+      <div class="sm__links">
+        <a href="#"><img src="./images/icon-facebook.svg" alt="" class="sm__img"></a>
+        <a href="#"><img src="./images/icon-pinterest.svg" alt="" class="sm__img"></a>
+        <a href="#"><img src="./images/icon-instagram.svg" alt="" class="sm__img"></a>
+        <a href="#"><img src="./images/icon-twitter.svg" alt="" class="sm__img"></a>
+      </div>
+    </div>
+  </div>
+</footer>
+  </body>
+</html>
