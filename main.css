@@ -97,7 +97,7 @@ header{
 .hamburger{
     position: absolute;
     right: 2rem;
-    top: 3.1rem;
+    top: 3.3rem;
     color: var(--GrayishViolet);
 }
 
@@ -276,7 +276,7 @@ margin-top: 3rem;
     align-items: center;
     justify-content: center;
     position: absolute;
-    left: 41%;
+    left: 40.9%;
     top: -13%;
  }
  .second__section_articles{
@@ -296,7 +296,7 @@ margin-top: 3rem;
  }
 .line{
     height: 8rem;
-    width: 7px;
+    width: 5px;
     background-color: var(--Cyan);
     justify-self: center;
     align-self: center;
